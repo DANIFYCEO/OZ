@@ -1,5 +1,3 @@
-import { ArrowUpRight } from 'lucide-react';
-
 const Footer = () => {
   return (
     <footer className="bg-black border-t border-white/5">
