@@ -7,9 +7,23 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      await fetch('https://formsubmit.co/ajax/hello@vintagesolutions.dev', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      });
+      setSubmitted(true);
+    } catch (error) {
+      console.error(error);
+      alert('There was an error sending your message. Please try again.');
+    }
   };
 
   return (
@@ -96,12 +110,17 @@ const Contact = () => {
                 onSubmit={handleSubmit}
                 className="glass rounded-2xl p-6 md:p-8 space-y-5"
               >
+                {/* Honeypot for spam */}
+                <input type="text" name="_honey" style={{ display: 'none' }} />
+                <input type="hidden" name="_captcha" value="false" />
+                
                 <div>
                   <label className="text-xs text-white/40 uppercase tracking-wider mb-1.5 block">
                     Name
                   </label>
                   <input
                     type="text"
+                    name="name"
                     required
                     placeholder="Your full name"
                     className="w-full h-11 bg-white/5 border border-white/10 rounded-lg px-4 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-oz-green/40 transition-colors"
@@ -113,6 +132,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     required
                     placeholder="you@company.com"
                     className="w-full h-11 bg-white/5 border border-white/10 rounded-lg px-4 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-oz-green/40 transition-colors"
@@ -123,6 +143,7 @@ const Contact = () => {
                     Message
                   </label>
                   <textarea
+                    name="message"
                     required
                     rows={4}
                     placeholder="Tell us about your project..."

@@ -29,7 +29,7 @@ const SERVICES = [
     title: 'Cybersecurity',
     description:
       'Enterprise-grade security audits, penetration testing, and continuous monitoring to protect your assets.',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
   },
   {
     icon: BarChart3,

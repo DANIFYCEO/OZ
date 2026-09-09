@@ -20,9 +20,10 @@ const Navbar = () => {
         }`}
       >
         <div className="flex items-center justify-between px-5 py-4 md:px-10">
-          {/* Logo */}
           <a href="/" className="flex items-center gap-2 z-50">
-            <img src="/logo.png" alt="Vintage Solutions" className="h-8 w-auto object-contain rounded-lg" />
+            <div className="h-10 md:h-12 w-14 md:w-16 overflow-hidden flex items-start justify-center rounded-lg">
+              <img src="/logo.png" alt="Vintage Solutions" className="w-[140%] max-w-[140%] -mt-1 object-cover" />
+            </div>
           </a>
 
           {/* Desktop nav */}
