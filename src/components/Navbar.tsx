@@ -22,8 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between px-5 py-4 md:px-10">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 z-50">
-            <img src="/logo.png" alt="OZ" className="h-8 w-8 object-contain rounded-lg" />
-            <span className="text-lg font-bold tracking-wide">OZ</span>
+            <img src="/logo.png" alt="Vintage Solutions" className="h-8 w-auto object-contain rounded-lg" />
           </a>
 
           {/* Desktop nav */}

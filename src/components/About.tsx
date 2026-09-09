@@ -81,13 +81,13 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.15 }}
           >
             <span className="text-xs font-mono uppercase tracking-widest text-oz-green mb-4 block">
-              About OZ
+              About Vintage Solutions
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
               Engineering excellence, delivered with purpose.
             </h2>
             <p className="mt-5 text-base text-white/55 leading-relaxed">
-              OZ is more than a software company — we're a team of engineers,
+              Vintage Solutions is more than a software company — we're a team of engineers,
               designers, and strategists who believe technology should serve
               people, not the other way around.
             </p>

@@ -9,10 +9,9 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-4">
               <img
                 src="/logo.png"
-                alt="OZ"
-                className="h-8 w-8 object-contain rounded-lg"
+                alt="Vintage Solutions"
+                className="h-8 w-auto object-contain rounded-lg"
               />
-              <span className="text-lg font-bold">OZ</span>
             </div>
             <p className="text-sm text-white/40 leading-relaxed">
               Reliable software for the real world. Built with care in Lagos,
@@ -68,7 +67,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/30">
-            © {new Date().getFullYear()} OZ Software Solutions. All rights
+            © {new Date().getFullYear()} Vintage Solutions. All rights
             reserved.
           </p>
           <div className="flex items-center gap-5">

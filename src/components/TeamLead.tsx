@@ -70,7 +70,7 @@ const TeamLead = () => {
             <Quote className="w-10 h-10 text-oz-green/30 mb-6" />
 
             <blockquote className="text-xl md:text-2xl lg:text-3xl font-medium text-white leading-relaxed">
-              "At OZ, we don't just write code — we engineer trust. Every line
+              "At Vintage Solutions, we don't just write code — we engineer trust. Every line
               we ship is a promise that someone's business, someone's livelihood,
               can depend on what we build. That responsibility is what drives us
               to be exceptional every single day."
@@ -84,9 +84,9 @@ const TeamLead = () => {
             </div>
 
             <p className="mt-6 text-sm text-white/40 leading-relaxed max-w-lg">
-              David leads OZ's engineering team with a focus on
+              David leads our engineering team with a focus on
               craftsmanship, reliability, and genuine human impact. Under his
-              leadership, OZ has delivered over 50 projects across fintech,
+              leadership, Vintage Solutions has delivered over 50 projects across fintech,
               healthtech, and enterprise SaaS — each one built to last.
             </p>
           </motion.div>

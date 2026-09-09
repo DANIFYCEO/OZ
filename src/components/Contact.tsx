@@ -49,7 +49,7 @@ const Contact = () => {
 
             <div className="mt-10 space-y-4">
               {[
-                { label: 'Email', value: 'hello@oz.dev', href: 'mailto:hello@oz.dev' },
+                { label: 'Email', value: 'hello@vintagesolutions.dev', href: 'mailto:hello@vintagesolutions.dev' },
                 { label: 'Location', value: 'Lagos, Nigeria', href: '#' },
               ].map((item) => (
                 <a

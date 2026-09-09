@@ -44,7 +44,7 @@ const Hero = () => {
           transition={{ duration: 0.7, delay: 0.35 }}
           className="mt-5 md:mt-6 text-base md:text-lg text-white/60 max-w-xl mx-auto leading-relaxed"
         >
-          OZ is a software solutions company delivering reliable, scalable, and
+          Vintage Solutions is a software company delivering reliable, scalable, and
           human-centered technology for businesses that demand excellence.
         </motion.p>
 
