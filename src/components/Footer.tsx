@@ -7,9 +7,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="max-w-xs">
             <div className="flex items-center gap-2 mb-4">
-              <div className="h-10 w-14 overflow-hidden flex items-start justify-center rounded-lg">
-                <img src="/logo.png" alt="Vintage Solutions" className="w-[140%] max-w-[140%] -mt-1 object-cover" />
-              </div>
+              <img src="/logo.png" alt="Vintage Solutions" className="h-10 w-auto object-contain rounded-lg" />
             </div>
             <p className="text-sm text-white/40 leading-relaxed">
               Reliable software for the real world. Built with care in Lagos,
